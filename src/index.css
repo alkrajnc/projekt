@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*
+  2D2D2A 4C4C47 848FA5 C14953 E5DCC5 
+*/
+:root{
+  --red: #C14953;
+  --dark-gray: #2D2D2A;
+  --gray: #4C4C47;
+  --metal: #848FA5;
+  --green: rgba(34, 245, 143, 0.788);
+  --beige: #E5DCC5;
+}
+
+
+@font-face {
+  font-family: EuclidFlex;
+  src: url(./assets/fonts/EuclidFlexRegular.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: EuclidFlexBold;
+  src: url(./assets/fonts/EuclidFlexBold.ttf);
+}
+@font-face {
+  font-family: EuclidFlexLight;
+  src: url(./assets/fonts/EuclidCircularALight.ttf);
+}
+#root{
+  height: 100vh;
+}
+body {
+  margin: 0;
+  font-family: EuclidFlex;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+}
+button{
+  background-color: var(--green);
+  border-left: 0.5rem solid #3ba9cb;
+  height: 2rem;
+  width: 12vw;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  border: 0;
+  outline: 0;
+  transition: all 200ms ease-in-out;
+  color: #2D2D2A;
+}
+
+button:hover{
+  transform: scale(1.1);
+}
+
+
+.App {
+  text-align: center;
+  background-color: var(--dark-gray);
+  color: var(--beige);
+}
